@@ -49,7 +49,7 @@ kubectl delete ingress rancher -n cattle-system
 =================================================================================================================================================================================================
 # commands
 ## Installation
-'''sh
+```sh
 helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
 create namespace cattle-system
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.crds.yaml
@@ -63,6 +63,7 @@ kubectl get ns
 kubectl get pods -n cattle-system
 kubectl get service -n cattle-system
 kubectl get ingress -n cattle-system
+```
 =================================================================================================================================================================================================
 
 
