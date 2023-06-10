@@ -58,8 +58,8 @@ helm repo update
 helm install cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.11.0
 kubectl get pods --namespace cert-manager
 helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=rancher.theeducloud.com --set bootstrapPassword=admin
-``
-# Verify
+```
+## Verify
 ```sh
 kubectl get ns
 kubectl get pods -n cattle-system
